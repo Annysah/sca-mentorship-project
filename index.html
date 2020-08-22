@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Covid-19 Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="files/img/logo2.png" alt="">
+            <p>Covid-19 Tracker</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Blog Posts</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="statistics">
+            <div class="recent-reports">
+                <div class="country">
+                    <h3 id="date">Date Timing</h3>
+                    <h4 class="display-country">World Data &#8594;</h4>
+                    <div class="search">
+                        <div class="input-country">
+                            <input type="text" required list="countries" id="search-input" placeholder="Type In Country Here...">
+                            <datalist id="countries">
+                                
+                            </datalist>
+                            <i id="search-btn" class="search-btn fas fa-search"></i>
+                        </div>
+                        <div class="country-list">
+                        </div>
+                    </div>
+                </div>
+                    <div class="cases">
+                        <div class="title">Confirmed Cases</div>
+                        <div class="numbers">0</div>
+                        <div class="new-numbers">+0</div>
+                    </div>
+                    <div class="recovered">
+                            <div class="title">Discharged</div>
+                            <div class="numbers">0</div>
+                            <div class="new-numbers">+0</div>
+                    </div>
+                    <div class="deaths">
+                            <div class="title">Deaths</div>
+                            <div class="numbers">0</div>
+                            <div class="new-numbers">+0</div>
+                    </div>
+            </div>
+            <div class="charts">
+                <canvas id="bar-chart"></canvas>
+            </div>
+        </div>
+    </main>
+    <footer class="f-wrapper">
+        <div class="copyright">
+            <p>Copyright &copy; 2020 Coded by Annysah</p>
+        </div>
+    </footer>
+    <script src="js/app.js"></script>
+</body>
+</html>

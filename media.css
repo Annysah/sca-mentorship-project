@@ -1,0 +1,12 @@
+@media screen and (max-width: 600px) {
+    .recent-reports {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .input-country {
+       position: absolute;
+       top: 230px;
+    }
+}

@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 20px;
+    background: #fff;
+    max-height: 100vh;
+}
+
+
+header {
+    max-width: 1200px;
+    width: 100%;
+    height: 85px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    background-color: #fedbd0;
+    margin: 0 auto;
+    color: #442c2e;
+    font-family: 'Playfair Display', serif;
+}
+
+.logo {
+    display: flex;
+    padding-left: 20px;
+}
+
+.logo img{
+    width: 70px;
+}
+
+.logo p {
+    font-weight: bolder;
+    margin-top: 15px;
+    padding-left: 14px;
+    font-size: 20px;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    padding: 20px;
+    color: #442c2e;
+}
+
+main {
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+.statistics {
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url('files/img/bg4.webp');
+    background-size: cover;
+}
+
+.recent-reports {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+
+#date {
+    color: #fff;
+}
+
+.title, .new-numbers {
+    color: #fff;
+}
+
+.cases .numbers {
+    font-size: 25px;
+    font-weight: bold;
+    color: yellow;
+}
+
+.charts {
+    width: 80%;
+    height: 70vh;
+    margin: 80px auto
+}
+
+.recovered .numbers {
+    font-size: 25px;
+    font-weight: bold;
+    color: green;
+}
+
+.deaths .numbers {
+    font-size: 25px;
+    font-weight: bold;
+    color: red;
+}
+
+.display-country {
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.search {
+    position: relative;
+    top: 15px;
+}
+
+.input-country  {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 300px;
+    height: 40px;
+    background-color: #333;
+    z-index: 1;
+}
+
+.input-country input {
+    width: 300px;
+    height: 30px;
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    outline: none;
+    font-size: 20px;
+}
+
+.input-country .fa {
+    padding-right: 5px;
+}
+
+.search-btn {
+    color: #fff;
+}
+
+#countries {
+    position: absolute;
+    top: 40px;
+    width: 400px;
+    height: 400px;
+    background-color: #333;
+    color: #fff;
+    opacity: .8;
+    overflow-y: scroll;
+}
+
+/*#countries::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+#countries::-webkit-scrollbar-track {
+    background: #333 ;
+  }
+  
+
+#countries::-webkit-scrollbar-thumb {
+    background: #fff;
+  }
+ 
+#countries::-webkit-scrollbar-thumb:hover {
+    background: #fff;
+}
+*/
+
+footer {
+    max-width: 1200px;
+    height: 60px;
+    color: #442c2e;
+    background-color: #fedbd0;
+    font-size: 15px;
+    margin: 0 auto;
+    padding-top: 20px;
+    text-align: center;
+}
